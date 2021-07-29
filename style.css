@@ -1,3 +1,5 @@
+/* Kode for alle sider  */
+
 /* Margin på mobile  */
 
 body {
@@ -5,6 +7,7 @@ body {
     margin-right: 2rem;
   }
 
+  /* Farver */
 html {
     --black: #000000;
     --white: #ffffff;
@@ -24,8 +27,9 @@ html {
   /*fonte*/
 h1 {
     font-family: 'Bungee inline', cursive;
-    font-size: clamp(3rem, 16vw - 3rem, 7rem);  }
+    font-size: clamp(3rem, 16vw - 3rem, 7rem);  
 }
+
 
 h2 {
     font-family: 'Bungee', cursive;
@@ -41,7 +45,7 @@ h4 {
     font-family: 'Oswald', sans-serif;
     font-size: 2em;
     font-weight: 600;
-    color: var(--black); */
+    color: var(--black); 
 }
 
 h5 {
