@@ -1,0 +1,350 @@
+/* Generelt for alle portfolio-undersider */
+
+html {
+    --black: #000000;
+    --white: #ffffff;
+    --darkblue: #2D2E78;
+    --mediumblue: #3456A1;
+    --blue: #4874B5;
+    --lightblue: #418CC3;
+    --lightgreen: #CAE1C7;
+    --beige: #F4F5E8;
+    --darkred: #D93830;
+    --orangered: #E4614F;
+    --rose: #EFBDC5;
+    --lightpurple: #EDD8E7;
+    --lightyellow: #F9F1CF;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+ /*fonte*/
+ h1 {
+    font-family: 'Bungee inline', cursive;
+    font-size: clamp(3rem, 16vw - 3rem, 7rem);  
+}
+
+
+h2 {
+    font-family: 'Bungee', cursive;
+    font-size: clamp(1.5rem, 5.3vw - 0.3rem, 2rem);
+}
+
+h3 {
+    font-family: 'Bungee', cursive;
+    font-size: clamp(1.5rem, 5.3vw - 1.3rem, 2rem);
+}
+
+h4 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2em;
+    font-weight: 600;
+    color: var(--black); 
+}
+
+h5 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1em;
+    font-weight: 100;
+    color: var(--black);
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+    color: var(--black);
+    max-width: 60ch;
+}
+
+a {
+    text-decoration: none;
+    color: var(--darkblue);
+}
+/* #header */
+header {
+    position: sticky;
+    top: 0;
+    padding: 1rem;
+    background: var(--white);
+    left: 0;
+    right: 0;
+}
+
+.wrapper {
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
+}
+
+#topnav {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+#topnav a:hover {
+    text-decoration: underline var(--orangered);
+    color: var(--orangered);
+}
+
+/*Logo*/
+.logo img {
+    display: inline-block;
+    height: auto;
+    object-fit: cover;
+    position: relative;
+    width: 70px;
+}
+
+
+/*Burgermenu*/
+
+/* #menuknap {
+    display: inline-block;
+    font-size: 3rem;
+} */
+
+/* #menu {
+    list-style-type: none;
+    transition: all .3s;
+    transform-origin: top left;
+    font-family: 'Bungee', cursive;
+    font-size: 1em;
+    justify-content: space-between;
+    /*
+    margin-left: 1em;
+    margin-right: 1em;
+*/
+    /* padding: 1em;
+    list-style: none;
+    overflow-x: auto;
+    position: absolute;
+    left: 0;
+    background: white;
+    width: 100vw;
+} */
+
+/* #menu.hidden {
+    /*    transform: translateX(-100%);
+    */
+    /* opacity: 0;
+    left: -100px;
+} */
+
+/*Burgermenu*/
+
+#menuknap {
+    display: inline-block;
+    font-size: 3rem;
+}
+
+#menu {
+    list-style-type: none;
+    transition: all .3s;
+    transform-origin: top left;
+    font-family: 'Bungee', cursive;
+    font-size: 1em;
+    justify-content: space-between;
+    /*
+    margin-left: 1em;
+    margin-right: 1em;
+*/
+    padding: 1em;
+    list-style: none;
+    overflow-x: auto;
+    position: absolute;
+    left: 0;
+    background: white;
+    width: 100vw;
+}
+
+#menu.hidden {
+    /*    transform: translateX(-100%);
+    */
+    opacity: 0;
+    left: -100px;
+}
+
+@media only screen and (min-width: 600px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu {
+        width: auto;
+    }
+
+    #menu.hidden {
+        /*        transform: translateX(0);
+        */
+        left: 0;
+        position: relative;
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+        font-family: 'Bungee', cursive;
+        font-size: 1em;
+        margin: 0 1em;
+        list-style: none;
+        overflow-x: auto;
+    }
+}
+
+main nav ul {
+    font-family: 'Bungee', cursive;
+    font-size: 1em;
+    color: #2D2E78;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    gap: 1em;
+    margin-left: 6em;
+    margin-right: 6em;
+    margin-top: 5em;
+    list-style: none;
+    overflow-x: auto;
+}
+
+.dokumentlinks {
+    font-family: 'Bungee', cursive;
+    font-size: 1em;
+    color: #2D2E78;
+    display: list-item;
+    flex-flow: nowrap;
+    justify-content: left;
+    gap: 1em;
+    list-style: none;
+    overflow-x: auto;
+}
+
+@media only screen and (min-width: 600px) {
+
+    #menuknap {
+        display: none;
+    }
+
+    #menu {
+        width: auto;
+    }
+
+    #menu.hidden {
+        /*        transform: translateX(0);
+        */
+        left: 0;
+        position: relative;
+        opacity: 1;
+    }
+
+    #menu li {
+        display: inline-block;
+        font-family: 'Bungee', cursive;
+        font-size: 1em;
+        margin: 0 1em;
+        list-style: none;
+        overflow-x: auto;
+    }
+}
+
+
+/* Relevant for 02WEB */
+
+.02_wrapper h1 {
+    h1 {
+    color: var(--darkblue);
+}
+
+ h2 {
+    color: var(--darkblue);
+}
+
+h3 {
+    color: var(--darkblue);
+}
+}
+
+.splashbox {
+    background-color: var(--lightpurple);
+}
+
+/* Splashsession  */
+
+#02_splash_section {
+    object-fit: cover;
+}
+
+.container_splash img {
+    display: block;
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    margin: -2em auto 3em;
+}
+
+.col img {
+    display: block;
+    width: 60%;
+    height: auto;
+    object-fit: cover;
+    margin: -2em auto 3em;
+}
+
+.lerler_knap {
+    font-family: "Bungee", sans-serif;
+    font-size: 1.4em;
+    display: block;
+    padding: 1em 1.5em 1em;
+    text-decoration: none;
+    color: var(--darkblue);
+    background: var(--lightpurple);
+    cursor: pointer;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+/*Øvelser section*/
+
+@media (min-width: 1000px) {
+    .oevelser_section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-left: 1em;
+        margin-right: 1em;
+
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .harjeglaert_section_wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left: 1em;
+        margin-right: 1em;
+
+    }
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: 20px;
+    }
+}
