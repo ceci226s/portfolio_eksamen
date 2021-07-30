@@ -28,7 +28,7 @@ body {
 
  /*fonte*/
  h1 {
-    font-family: 'Bungee inline', cursive;
+    font-family: 'Bungee Inline', cursive;
     font-size: clamp(3rem, 20vw - 4.5rem, 8rem);
 }
 
@@ -66,6 +66,16 @@ p {
     font-size: clamp(1rem, 2vw + 0.3rem, 1.5rem);
     margin-left: 2rem;
 
+}
+
+p1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1rem, NaNvw - NaNrem, 1,5rem);
+    font-weight: 300;
+    color: gray;
+    max-width: 60ch;
+    font-size: clamp(1rem, 2vw + 0.3rem, 1.5rem);
+    margin-left: 2rem;
 }
 
 a {
@@ -204,6 +214,7 @@ main nav ul a:hover {
     color: var(--orangered);
 }
 
+
 /* Billeder */
 .container_splash img {
     display: block;
@@ -283,7 +294,7 @@ main nav ul a:hover {
 /* knap */
 .lerler_knap {
     font-family: "Bungee", sans-serif;
-    font-size: 1.4em;
+    font-size: clamp(1rem, 2vw + 0.3rem, 1.5rem);
     display: block;
     padding: 1em 1.5em 1em;
     text-decoration: none;
@@ -303,6 +314,101 @@ main nav ul a:hover {
 
 .lerler_knap:active {
 background-color: var(--lightpurple);
-transform: translateY(4px);
 }
 
+
+
+/* Tilpasning af design for 03UX */
+
+.splashbox_03 h1 {
+    color: var(--lightblue);
+}
+
+.splashbox_03 h2 {
+    color: var(--lightblue);
+}
+
+.splashbox_03 h3 {
+    color: var(--lightblue);
+}
+
+.splashbox_03 {
+    background-color: var(--lightgreen);
+}
+
+#splash_section_03 {
+    object-fit: cover;
+}
+
+/* knap */
+.kaktusch_knap {
+    font-family: "Bungee", sans-serif;
+    font-size: clamp(1rem, 2vw + 0.3rem, 1.5rem);
+    display: block;
+    padding: 1em 1.5em 1em;
+    text-decoration: none;
+    color: var(--lightblue);
+    background: var(--lightgreen);
+    cursor: pointer;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+    border: none;
+}
+
+.kaktusch_knap:hover {
+    background-color: var(--lightblue);
+    color: var(--lightgreen);
+}
+
+.kaktusch_knap:active {
+background-color: var(--lightgreen);
+}
+
+
+/* Tilpasning af design for 04animation */
+
+.splashbox_04 h1 {
+    color: var(--beige);
+}
+
+.splashbox_04 h2 {
+    color: var(--beige);
+}
+
+.splashbox_04 h3 {
+    color: var(--beige);
+}
+
+.splashbox_04 {
+    background-color: var(--darkblue);
+}
+
+#splash_section_04 {
+    object-fit: cover;
+}
+
+/* knap */
+.knap_04 {
+    font-family: "Bungee", sans-serif;
+    font-size: clamp(1rem, 2vw + 0.3rem, 1.5rem);
+    display: block;
+    padding: 1em 1.5em 1em;
+    text-decoration: none;
+    color: var(--lightyellow);
+    background: var(--darkblue);
+    cursor: pointer;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+    border: none;
+}
+
+.knap_04:hover {
+    background-color: var(--lightyellow);
+    color: var(--darkblue);
+}
+
+.knap_04:active {
+background-color: var(--darkblue);
+}
