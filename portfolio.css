@@ -75,7 +75,15 @@ p1 {
     color: gray;
     max-width: 60ch;
     font-size: clamp(1rem, 2vw + 0.3rem, 1.5rem);
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
+}
+/* 
+.harjeglaert_section_01 .harjeglaert_section_02 .harjeglaert_section_03 .harjeglaert_section_04 p {
+    margin: 0;
+}  */
+
+.harjeglaert_section_wrapper p {
+    margin-left: 0;
 }
 
 a {
@@ -174,6 +182,7 @@ header {
         list-style: none;
         overflow-x: auto;
     }
+
 }
 
 /* Links i både undermenu og dokumentliste */
