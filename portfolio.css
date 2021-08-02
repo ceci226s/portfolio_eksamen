@@ -561,16 +561,16 @@ background-color: var(--lightyellow);
     font-size: clamp(1rem, 2.7vw - 0.2rem, 1.5rem);
 }
 
-#cv_billede img {
-    max-width: 500px;
+.splash_wrapper img {
+    max-width: 450px;
     box-shadow: 24px 24px 0px 0px var(--rose);
+    /* border: 15px solid var(--rose); */
 }
  
-@media (min-width: 1000px) {
+    @media (min-width: 1000px) {
 
-    #splash_section_06 .splash_wrapper {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 20px;
-        background-color: #eee4e1;
-    }
+        #splash_section_06 .splash_wrapper {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr;
+            gap: 20px;
+        }

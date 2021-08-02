@@ -169,14 +169,14 @@ header {
     margin-bottom: -2rem;
   }
 
-  #home_section img {
+  /* #home_section img {
         grid-column: 1 / 10;
         grid-row: 5 / 10;
         background-size: cover;
         width: 100%;
         border: 10px solid var(--lightyellow);
         margin-bottom: 2em;
-    }
+    } */
 
   #home_section h1 {
     color: var(--darkblue);
@@ -325,8 +325,6 @@ header {
         grid-row: 2 / 6;
         background-size: cover;
         width: 100%;
-        border: 20px solid var(--lightyellow);
-
     }
 
   /* Tema-kort section */
