@@ -421,3 +421,50 @@ background-color: var(--lightgreen);
 .knap_04:active {
 background-color: var(--darkblue);
 }
+
+/* Tilpasning af design for 05indhold */
+
+.splashbox_05 h1 {
+    color: var(--beige);
+}
+
+.splashbox_05 h2 {
+    color: var(--beige);
+}
+
+.splashbox_05 h3 {
+    color: var(--beige);
+}
+
+.splashbox_05 {
+    background-color: var(--darkblue);
+}
+
+#splash_section_05 {
+    object-fit: cover;
+}
+
+/* knap */
+.knap_05 {
+    font-family: "Bungee", sans-serif;
+    font-size: clamp(1rem, 2vw + 0.3rem, 1.5rem);
+    display: block;
+    padding: 1em 1.5em 1em;
+    text-decoration: none;
+    color: var(--lightyellow);
+    background: var(--darkblue);
+    cursor: pointer;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+    border: none;
+}
+
+.knap_05:hover {
+    background-color: var(--lightyellow);
+    color: var(--darkblue);
+}
+
+.knap_05:active {
+background-color: var(--darkblue);
+}
