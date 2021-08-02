@@ -51,10 +51,10 @@ h4 {
 }
 
 h5 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 1em;
-    font-weight: 100;
-    color: var(--black);
+    font-family: 'Bungee', sans-serif;
+    font-size: clamp(1rem, 2.7vw - 0.2rem, 1.5rem);
+    margin-left: 2rem;
+    color: var(--darkblue);
 }
 
 p {
@@ -77,10 +77,7 @@ p1 {
     font-size: clamp(1rem, 2vw + 0.3rem, 1.5rem);
     /* margin-left: 2rem; */
 }
-/* 
-.harjeglaert_section_01 .harjeglaert_section_02 .harjeglaert_section_03 .harjeglaert_section_04 p {
-    margin: 0;
-}  */
+
 
 .harjeglaert_section_wrapper p {
     margin-left: 0;
@@ -200,6 +197,23 @@ main nav ul {
     list-style: none;
     overflow-x: auto;
 }
+
+@media (min-width: 1000px) {
+    main nav ul {
+        margin-left: 1em;
+        margin-right: 1em;
+
+    } 
+}
+
+    .col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
 
 main nav ul a:hover {
     text-decoration: underline var(--orangered);
@@ -425,19 +439,19 @@ background-color: var(--darkblue);
 /* Tilpasning af design for 05indhold */
 
 .splashbox_05 h1 {
-    color: var(--beige);
+    color: var(--orangered);
 }
 
 .splashbox_05 h2 {
-    color: var(--beige);
+    color: var(--orangered);
 }
 
 .splashbox_05 h3 {
-    color: var(--beige);
+    color: var(--orangered);
 }
 
 .splashbox_05 {
-    background-color: var(--darkblue);
+    background-color: var(--lightyellow);
 }
 
 #splash_section_05 {
@@ -451,8 +465,8 @@ background-color: var(--darkblue);
     display: block;
     padding: 1em 1.5em 1em;
     text-decoration: none;
-    color: var(--lightyellow);
-    background: var(--darkblue);
+    color: var(--orangered);
+    background: var(--lightyellow);
     cursor: pointer;
     text-align: center;
     max-width: 200px;
@@ -461,10 +475,51 @@ background-color: var(--darkblue);
 }
 
 .knap_05:hover {
-    background-color: var(--lightyellow);
-    color: var(--darkblue);
+    background-color: var(--orangered);
+    color: var(--lightyellow);
 }
 
 .knap_05:active {
-background-color: var(--darkblue);
+background-color: var(--lightyellow);
 }
+
+/* For at lave videoen responsiv, har jeg fulgt denne guide fra W3Schools: https://www.w3schools.com/howto/howto_css_responsive_iframes.asp */
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+    margin-bottom: -3em;
+  }
+  
+  /* Then style the iframe to fit in the container div with full height and width */
+  .responsive-iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 90%;
+    height: 90%;
+    margin-left: 2em;
+    margin-bottom: -5em;
+  }
+
+  @media (min-width: 600px) {
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;}
+
+        .container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+            margin-bottom: -23em;
+          }
+    }
