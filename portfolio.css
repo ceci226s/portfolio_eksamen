@@ -95,7 +95,9 @@ header {
     padding: 1rem;
     background: var(--white);
     left: 0;
-    right: 0;
+    /* right: 0;
+    Overvej om der skal skygge på menu for at hjælpe brugeren med at finde den box-shadow: 0 3px 7px 0px rgba(0, 0, 0, 0.33); */
+
 }
 
 .wrapper {
@@ -522,4 +524,53 @@ background-color: var(--lightyellow);
             padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
             margin-bottom: -23em;
           }
+    }
+
+/* Tilpasning af design for ommig */
+
+.splashbox_06 h1 {
+    color: var(--beige);
+}
+
+.splashbox_06 h2 {
+    color: var(--beige);
+}
+
+.splashbox_06 h3 {
+    color: var(--beige);
+}
+
+.splashbox_06 {
+    background-color: var(--rose);
+}
+
+#splash_section_05 {
+    object-fit: cover;
+}
+
+.cv h2 {
+    color: var(--rose);
+    margin-left: 2rem;
+}
+
+.cv h3 {
+    font-size: clamp(1rem, 2.7vw - 0.2rem, 1.5rem);
+}
+
+.cv h4 {
+    font-size: clamp(1rem, 2.7vw - 0.2rem, 1.5rem);
+}
+
+#cv_billede img {
+    max-width: 500px;
+    box-shadow: 24px 24px 0px 0px var(--rose);
+}
+ 
+@media (min-width: 1000px) {
+
+    #splash_section_06 .splash_wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 20px;
+        background-color: #eee4e1;
     }
