@@ -59,7 +59,6 @@ h5 {
 
 p {
     font-family: 'Oswald', sans-serif;
-    font-size: clamp(1rem, NaNvw - NaNrem, 1,5rem);
     font-weight: 300;
     color: var(--black);
     max-width: 60ch;
@@ -70,12 +69,10 @@ p {
 
 p1 {
     font-family: 'Oswald', sans-serif;
-    font-size: clamp(1rem, NaNvw - NaNrem, 1,5rem);
     font-weight: 300;
     color: gray;
     max-width: 60ch;
     font-size: clamp(1rem, 2vw + 0.3rem, 1.5rem);
-    /* margin-left: 2rem; */
 }
 
 
@@ -214,7 +211,7 @@ main nav ul {
         justify-content: space-between;
         gap: 20px;
     }
-}
+
 
 
 main nav ul a:hover {
@@ -312,7 +309,7 @@ main nav ul a:hover {
     background-color: var(--lightpurple);
 }
 
-#02_splash_section {
+#splash_section_02 {
     object-fit: cover;
 }
 
@@ -574,3 +571,4 @@ background-color: var(--lightyellow);
             grid-template-columns: 1.5fr 1fr;
             gap: 20px;
         }
+    }
