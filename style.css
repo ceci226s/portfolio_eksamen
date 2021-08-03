@@ -169,14 +169,6 @@ header {
     margin-bottom: -2rem;
   }
 
-  /* #home_section img {
-        grid-column: 1 / 10;
-        grid-row: 5 / 10;
-        background-size: cover;
-        width: 100%;
-        border: 10px solid var(--lightyellow);
-        margin-bottom: 2em;
-    } */
 
   #home_section h1 {
     color: var(--darkblue);
@@ -218,7 +210,6 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* aligns elements to center */
 }
 
 .portfolio_card h1 {
