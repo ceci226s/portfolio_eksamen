@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Bungee+Outline&family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+
+<body>
+    <header>
+        <!--Burgermenu'en har jeg copy-pastet fra graphemica.com-->
+        <div class="wrapper" id="topnav">
+            <nav>
+                <div id="menuknap">☰</div>
+                <ul id="menu" class="hidden">
+                    <li><a href="index.html">Forside</a></li>
+                    <li><a href="02web.html">Web</a></li>
+                    <li><a href="03ux.html">UX</a></li>
+                    <li><a href="04animation.html">Animation</a></li>
+                    <li><a href="05indhold.html">Indhold</a></li>
+                    <li><a href="06portfolio.html">Portfolio</a></li>
+                    <li><a href="ommig.html">Om mig</a></li>
+                </ul>
+            </nav>
+
+            <a class="logo" href=index.html><img src="billeder/logo.png" alt="cmf">
+            </a>
+
+        </div>
+    </header>
+
+    <main id="wrapper_06">
+        <div class="splashbox_06">
+            <h2>06</h2>
+            <h1>Portfolio</h1>
+        </div>
+        <section id="splash_section_06">
+            <div class="container_splash">
+                <img src="billeder/06_splash.png" alt="Portfolio">
+            </div>
+            <!--Target=blank får linket til at åbne i et nyt vindue-->
+            <a class="knap_06" href="index.html" target="_blank">Forsiden</a>
+        </section>
+
+        <section id="links_section_06">
+            <nav>
+                <ul class="links">
+                    <li><a href="#introduktion_section_06">
+                            Introduktion
+                        </a></li>
+                    <li><a href="#designprincipper_06">Design principper</a></li>
+                    <li><a href="#reflektion_06">Reflektioner</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section id="introduktion_section_06">
+            <br>
+            <br>
+            <h3>Introduktion</h3>
+            <h4>Deskresearch</h4>
+            <p>Jeg startede eksplorativt ved at samle inspiration til et moodboard med forskellige stilarter og farvekombinationer. Jeg ønskede at mit website skulle udstråle at være farverig og "playful", da jeg synes at det repræsenterede på bedste måde den nysgerring og kreative tilgang, vi har arbejdet med de forskellige projekter på. Herefter lavede jeg rå sketches til low fidelity wireframes, hvor jeg ønskede så få klik for brugeren som muligt for at navigere rundt på siden med løbende kontinuitet og symmetri, så siderne, trods forskelligheder i indhold, stadig var genkendelige og nemme for brugeren at navigere i. Moodboard blev til Styletile og jeg brugte en digital udgave af Crazy 8s til at designe mit logo.  
+<br>
+<br>
+                I Figma lavede jeg min low fidelity wireframe til en high fidelity wireframe, samt layout diagram til forsiden samt en portfolioside. 
+            </p>
+        </section>
+
+        <section id="designprincipper_06">
+            <h3>Designprincipper</h3>
+            <h4>Make it as easy for the user as possible</h4>
+            <h4>Let the stories shine</h4>
+            <h4>Make sure it works on mobile</h4>
+
+            <p>For at leve op til mine designprincipper testede min wireframe af på naboer, for at teste om hvordan de navigerede på siden. Det resulterede blandt andet i at jeg tilføjede anker-menuknapper på portfoliosiderne, da feedback var, at siden kunne blive en anelse lang at orrientere sig i. Desværre har jeg ikke helt formodet at leve op til 3. designprincip, da mine fonte ændrer sig, hvilket jeg ikke har formået at ændre inden aflevering, men stadig bor i min backlog. 
+            </p>
+
+            <ul class="dokumentlinks">
+                <li><a href="https://www.figma.com/file/PkN87UvljaksRbNlk3EALe/Ceciliemorville.dk?node-id=0%3A1" target="_blank">Se hele min High Fidelity Wireframe her</a></li> </ul>
+
+            <div class="oevelser_section_wrapper">
+                <div class="col">
+                    <h5>Wireframe</h5><br><img src="billeder/07_wireframemobile.png" alt="Wireframe">
+                </div>
+                <div class="col">
+                    <h5>Stiletyle</h5><br><img src="billeder/07_stiletyle.png" alt="Stiletyle">
+                </div>
+                <div class="col">
+                    <h5>Crazy 8 Logodesign</h5><br><img src="billeder/07_crazy8logo.png" alt="Crazy 8 Logodesign">
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section id="reflektion_06">
+            <br>
+            <br>
+            <h3>Reflektioner
+            </h3>
+            <h4>Mobile First</h4>
+            <p>På trods af at jeg havde designet wireframes udfra princippet om Mobile First, startede jeg med at kode portfoliosiderne Desktop first. Det resulterede i to forskellige CSS-filer for henholdsvis forside og undersider. Det vil jeg næste gang kombinere til én, hvor alt er kodet udfra Mobile-First-princippet.   </p>
+            <h4>Gestaltlovene</h4>
+            <p>Omend jeg har bestrebet mig efter at efterleve Gestaltlovene i mit design, har jeg udfordret "Erfaring" ved at placere mit logo i højre side og menu'en i venstre. Det gjorde jeg fordi jeg havde læst at design skal "lean left" og menuen var "tungere" end logoet. Det fungerede fint for mit lille udsnit af brugertests, dog har jeg siden lært at best-practise er at have logoet i venstre side som eksempeltvis Facebook, Walmart og DR. <br> </p>
+
+           </section>
+
+           <section id="footer">
+            <div class="telefon">
+              <h6>Cecilie Morville Felding</h6>
+              
+
+              <h6>
+                <a href="tel:+4527509022">+45 27 50 90 22</h6>
+                    
+          
+            </div>
+    
+            <div class="mail">
+                <h6>
+                    <a href="mailto:ceciliemorville@gmail.com">ceciliemorville@gmail.com</a>
+                  </h6>
+                  <h6>   
+                <a href="mailto:ceci226s@stud.kea.dk">ceci226s@stud.kea.dk</a>
+              </h6>
+            </div>
+    
+          </section>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
