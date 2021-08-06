@@ -24,18 +24,18 @@ html {
 
   /*fonte*/
 h1 {
-    font-family: 'Bungee inline', cursive;
+    font-family: 'Bungee inline', Impact;
     font-size: clamp(3rem, 16vw - 3rem, 7rem);  
 }
 
 
 h2 {
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee', Impact;
     font-size: clamp(1.5rem, 5.3vw - 0.3rem, 2rem);
 }
 
 h3 {
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee', Impact;
     font-size: clamp(1.5rem, 5.3vw - 1.3rem, 2rem);
 }
 
@@ -54,7 +54,7 @@ h5 {
 }
 
 h6 {
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee', Impact;
     font-size: clamp(0.75rem, 0.65rem + 0.5vw, 1.25rem);
     color: var(--darkblue);
 }
@@ -92,7 +92,7 @@ a {
     list-style-type: none;
     transition: all .3s;
     transform-origin: top left;
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee', Impact;
     font-size: 1em;
     justify-content: space-between;
     padding: 1em;
@@ -166,7 +166,7 @@ header {
 
     #menu li {
         display: inline-block;
-        font-family: 'Bungee', cursive;
+        font-family: 'Bungee', Impact;
         font-size: 1em;
         margin: 0 1em;
         list-style: none;
