@@ -28,16 +28,16 @@ body {
 
  /*fonte*/
  h1 {
-    font-family: 'Bungee Inline', cursive;
+    font-family: 'Bungee Inline', Impact;
     font-size: clamp(3rem, 20vw - 4.5rem, 8rem);
 }
 
 h2 {
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee', Impact;
     font-size: clamp(2rem, 8vw - 1rem, 4rem);}
 
 h3 {
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee', Impact;
     font-size: clamp(1.5rem, 5.3vw - 1.3rem, 2rem);
     margin-left: 2rem;
 }
@@ -51,14 +51,14 @@ h4 {
 }
 
 h5 {
-    font-family: 'Bungee', sans-serif;
+    font-family: 'Bungee', Impact;
     font-size: clamp(1rem, 2.7vw - 0.2rem, 1.5rem);
     margin-left: 2rem;
     color: var(--darkblue);
 }
 
 h6 {
-    font-family: 'Bungee', cursive;
+    font-family: 'Bungee', Impact;
     font-size: clamp(0.75rem, 0.65rem + 0.5vw, 1.25rem);
     color: var(--darkblue);
 }
