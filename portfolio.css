@@ -140,7 +140,7 @@ header {
     list-style-type: none;
     transition: all .3s;
     transform-origin: top left;
-    font-family: 'Bungee', Impact;
+    font-family: 'Bungee', impact;
     font-size: 1em;
     justify-content: space-between;
     padding: 1em;
